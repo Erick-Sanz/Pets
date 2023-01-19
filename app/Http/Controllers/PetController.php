@@ -14,7 +14,7 @@ class PetController extends Controller
      */
     public function index()
     {
-        return Pet::all();
+        return PettResource::collection(Pet::all());
     }
 
     /**
